@@ -5,8 +5,13 @@ var r1=(one,id)=>{
     let html=`
   <td data-id=${id}>  
    ${one.name}  
+<<<<<<< HEAD
      </td>   
      <td data-id=${id}>  
+=======
+     </td> 
+ <td data-id=${id}>  
+>>>>>>> 9bb569670368bb514dc36b164aa439edce1e7fbe
       ${one.rollnumber} 
   </td>  
    <td data-id=${id}>   
@@ -15,13 +20,21 @@ var r1=(one,id)=>{
       <td data-id=${id}> 
         ${one.status} 
           </td> 
+<<<<<<< HEAD
 
          `;     
+=======
+          `;     
+>>>>>>> 9bb569670368bb514dc36b164aa439edce1e7fbe
          //console.log(html);     
          table.innerHTML+=html;
          } 
  
+<<<<<<< HEAD
 db.collection('Student Details').get().then((d)=>{  
+=======
+      db.collection('Student Details').get().then((d)=>{  
+>>>>>>> 9bb569670368bb514dc36b164aa439edce1e7fbe
        d.docs.forEach(d1 => { 
          console.log(d1.data());  
             // console.log(d1.id);   
